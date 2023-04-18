@@ -1,0 +1,94 @@
+:root {
+    --blanco: #FFF;
+    --negro: #111111;
+    --gris: #343A40;
+
+    --fuentePrincipal: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  *,*:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.contacto {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gris);
+}
+
+.contactoimgwrp {
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactoimg {
+    width: 100%;
+}
+
+.contactoright {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 18rem;
+    /* padding: 0 7.3% 0 4.7%; */
+    width: 50%;
+}
+
+.contactotitle {
+    font-size: 5rem;
+    font-weight: 600;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    color: var(--blanco)
+}
+
+.contactoinputline {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contactoinputline textarea {
+    height: 10rem;
+    padding: 5px 0;
+    width: 100%;
+    background-color: var(--blanco);;
+}
+
+.contactolabel {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--blanco)
+}
+
+.contactobtn {
+    padding: 18px 55px;
+    border-radius: 1.5rem;
+    color: var(--blanco);
+    font-weight: 300;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+} 
+
+
