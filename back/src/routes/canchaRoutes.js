@@ -67,6 +67,7 @@ router
       // res.status(200).send('Cancha creada con exito');
       return res.status(200).json(newCancha);
     } catch (error) {
+      console.log(error);
       return res.status(500).json({ error: "Error al crear la cancha" });
     }
   })
@@ -110,7 +111,8 @@ router
           description,
           availability,
           grass,
-          players,
+          players
+
         );
         return res.status(200).json({ message: "actualizado correctamente" });
       } catch (error) {
