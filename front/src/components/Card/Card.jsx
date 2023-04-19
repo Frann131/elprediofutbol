@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 function Card({ image, title, description, availability, players }) {
   const [isAvailable, setIsAvailable] = useState(false);
 
+
+
   useEffect(() => {
     setIsAvailable(availability);
   }, [availability]);
